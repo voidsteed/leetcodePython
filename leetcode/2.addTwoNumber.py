@@ -13,7 +13,7 @@ Output: 7 -> 0 -> 8
 def addTwoNumbers(n1, n2):
     result = ListNode(0)
     carry = 0
-    while(n1.next != None or n2.next != None or carry):
+    while(n1.next != None or n2.next != None):
         curValue = n1.val + n2.val
         carry = curValue / 10
         result = curValue % 10
